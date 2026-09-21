@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Christopher Aguiño — Desarrollador Frontend</title>
+    <meta name="description" content="Portafolio de Christopher Aguiño, desarrollador frontend. Proyectos, habilidades y contacto.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" id="inicio-header">
+        <nav class="nav" aria-label="Navegación principal">
+            <a class="nav__brand" href="#inicio">
+                <span class="nav__mark" aria-hidden="true">/</span>
+                Christopher
+            </a>
+
+            <button class="nav__toggle" id="navToggle" type="button"
+                    aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú de navegación">
+                <span class="nav__bar" aria-hidden="true"></span>
+                <span class="nav__bar" aria-hidden="true"></span>
+                <span class="nav__bar" aria-hidden="true"></span>
+            </button>
+
+            <ul class="nav__menu" id="navMenu">
+                <li><a class="nav__link" href="#inicio">Inicio</a></li>
+                <li><a class="nav__link" href="#sobre-mi">Sobre mí</a></li>
+                <li><a class="nav__link" href="#habilidades">Habilidades</a></li>
+                <li><a class="nav__link" href="#proyectos">Proyectos</a></li>
+                <li><a class="nav__link" href="#design-system">Design System</a></li>
+                <li><a class="nav__link" href="#contacto">Contacto</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+                        <span class="theme-toggle__icon" aria-hidden="true">◐</span>
+                        <span id="themeLabel">Tema claro</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+
+        <!-- ============ INICIO / PRESENTACIÓN ============ -->
+        <section class="hero" id="inicio">
+            <div class="hero__text">
+                <p class="hero__greeting">Hola, soy</p>
+                <h1 class="hero__name">Christopher Aguiño</h1>
+                <p class="hero__role">Desarrollador Frontend en formación</p>
+                <p class="hero__lead">
+                    Construyo interfaces web accesibles y responsivas con HTML, CSS y JavaScript.
+                    Me interesa el detalle visual tanto como el código que hay detrás.
+                </p>
+                <p class="hero__actions">
+                    <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+                    <a class="btn btn--secondary" href="#contacto">Escríbeme</a>
+                </p>
+            </div>
+
+            <figure class="hero__figure">
+                <img class="avatar"
+                     src="fotoperfil.jpg"
+                     alt="Retrato de [TU NOMBRE COMPLETO]"
+                     width="400" height="400">
+            </figure>
+        </section>
+
+        <!-- ============ SOBRE MÍ ============ -->
+        <section class="section" id="sobre-mi">
+            <h2 class="section__title">Sobre mí</h2>
+
+            <div class="about">
+                <article class="about__text">
+                    <h3>Quién soy</h3>
+                    <p>
+                        Soy estudiante de Ingeniería en Software de la Universidad Estatal de Milagro. Empecé a programar por curiosidad
+                        y hoy dedico la mayor parte de mi tiempo al desarrollo web: maquetación semántica,
+                        diseño de componentes reutilizables y lógica en JavaScript.
+                    </p>
+                    <p>
+                        Actualmente sigo ampliando mi stack técnico aprendiendo SQL, MongoDB y Docker, 
+                        mientras busco mi primera oportunidad profesional en el sector 
+                        para aportar valor en proyectos reales.
+                    </p>
+                </article>
+
+                <aside class="about__aside" aria-label="Formación e intereses">
+                    <h3>Formación</h3>
+                    <ul class="about__list">
+                        <li><strong>Ingeniería en Software </strong> — UNEMI</li>
+                       
+                    </ul>
+
+                    <h3>Intereses</h3>
+                    <ul class="about__list">
+                        <li>Desarrollo frontend y diseño de interfaces</li>
+                        <li>Accesibilidad web (WCAG)</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ============ HABILIDADES ============ -->
+        <section class="section" id="habilidades">
+            <h2 class="section__title">Habilidades</h2>
+            <p class="section__intro">
+                Nivel declarado según lo que puedo explicar y demostrar en código.
+            </p>
+
+            <div class="skills">
+                <article class="skill-group">
+                    <h3 class="skill-group__title">Frontend</h3>
+                    <ul class="skill-list">
+                        <li class="skill">
+                            <span class="skill__icon" aria-hidden="true">&lt;/&gt;</span>
+                            <span class="skill__name">HTML5 semántico</span>
+                            <span class="skill__level" data-level="Avanzado">Avanzado</span>
+                        </li>
+                        <li class="skill">
+                            <span class="skill__icon" aria-hidden="true">#</span>
+                            <span class="skill__name">CSS3, Flexbox y Grid</span>
+                            <span class="skill__level" data-level="Avanzado">Avanzado</span>
+                        </li>
+                        <li class="skill">
+                            <span class="skill__icon" aria-hidden="true">JS</span>
+                            <span class="skill__name">JavaScript (ES6+)</span>
+                            <span class="skill__level" data-level="Intermedio">Intermedio</span>
+                        </li>
+                        <li class="skill">
+                            <span class="skill__icon" aria-hidden="true">⚛</span>
+                            <span class="skill__name">React</span>
+                            <span class="skill__level" data-level="Básico">Básico</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="skill-group">
+                    <h3 class="skill-group__title">Backend</h3>
+                    <ul class="skill-list">
+                        <li class="skill">
+                            <span class="skill__icon" aria-hidden="true">⬢</span>
+                            <span class="skill__name">Node.js + Express</span>
+                            <span class="skill__level" data-level="Básico">Básico</span>
+                        </li>
+                        <li class="skill">
+                            <span class="skill__icon" aria-hidden="true">Py</span>
+                            <span class="skill__name">Python</span>
+                            <span class="skill__level" data-level="Intermedio">Intermedio</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="skill-group">
+                    <h3 class="skill-group__title">Bases de datos</h3>
+                    <ul class="skill-list">
+                        <li class="skill">
+                            <span class="skill__icon" aria-hidden="true">▤</span>
+                            <span class="skill__name">MySQL</span>
+                            <span class="skill__level" data-level="Intermedio">Intermedio</span>
+                        </li>
+                        <li class="skill">
+                            <span class="skill__icon" aria-hidden="true">◇</span>
+                            <span class="skill__name">MongoDB</span>
+                            <span class="skill__level" data-level="Básico">Básico</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="skill-group">
+                    <h3 class="skill-group__title">Herramientas y diseño</h3>
+                    <ul class="skill-list">
+                        <li class="skill">
+                            <span class="skill__icon" aria-hidden="true">⑂</span>
+                            <span class="skill__name">Git y GitHub</span>
+                            <span class="skill__level" data-level="Intermedio">Intermedio</span>
+                        </li>
+                        <li class="skill">
+                            <span class="skill__icon" aria-hidden="true">▣</span>
+                            <span class="skill__name">Figma</span>
+                            <span class="skill__level" data-level="Básico">Básico</span>
+                        </li>
+                        <li class="skill">
+                            <span class="skill__icon" aria-hidden="true">✦</span>
+                            <span class="skill__name">Diseño responsive</span>
+                            <span class="skill__level" data-level="Intermedio">Intermedio</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ PROYECTOS ============ -->
+        <section class="section" id="proyectos">
+            <h2 class="section__title">Proyectos destacados</h2>
+            <p class="section__intro">Filtra por tecnología para ver en qué he trabajado.</p>
+
+            <div class="filters" role="group" aria-label="Filtrar proyectos por tecnología">
+                <button class="chip is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+                <button class="chip" type="button" data-filter="html" aria-pressed="false">HTML</button>
+                <button class="chip" type="button" data-filter="css" aria-pressed="false">CSS</button>
+                <button class="chip" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+                <button class="chip" type="button" data-filter="python" aria-pressed="false">Python</button>
+            </div>
+
+            <div class="projects" id="projectGrid">
+
+                <article class="card" data-tech="html css javascript">
+                    <figure class="card__media">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Crect width='640' height='400' fill='%231C1B24'/%3E%3Ctext x='320' y='210' font-family='sans-serif' font-size='26' fill='%238D8AA0' text-anchor='middle'%3ECaptura del proyecto 1%3C/text%3E%3C/svg%3E"
+                             alt="Captura de la interfaz del gestor de tareas" width="640" height="400" loading="lazy">
+                    </figure>
+                    <div class="card__body">
+                        <h3 class="card__title">Gestor de tareas</h3>
+                        <p class="card__text">
+                            Aplicación web para organizar tareas por prioridad, con datos guardados en el navegador.
+                        </p>
+                        <p class="card__problem">
+                            <strong>Problema que resuelve:</strong> evita perder el seguimiento de pendientes
+                            académicos sin depender de una cuenta ni de conexión a internet.
+                        </p>
+                        <ul class="badges">
+                            <li class="badge">HTML</li>
+                            <li class="badge">CSS</li>
+                            <li class="badge">JavaScript</li>
+                        </ul>
+                        <p class="card__actions">
+                            <button class="btn btn--ghost" type="button" data-modal="proyecto-1">Ver detalle</button>
+                            <a class="btn btn--ghost" href="https://github.com/[TU-USUARIO]/[REPO]" target="_blank" rel="noopener">Repositorio</a>
+                            <a class="btn btn--ghost" href="https://[TU-USUARIO].github.io/[REPO]/" target="_blank" rel="noopener">Ver demo</a>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card" data-tech="html css">
+                    <figure class="card__media">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Crect width='640' height='400' fill='%231C1B24'/%3E%3Ctext x='320' y='210' font-family='sans-serif' font-size='26' fill='%238D8AA0' text-anchor='middle'%3ECaptura del proyecto 2%3C/text%3E%3C/svg%3E"
+                             alt="Captura de la página institucional responsiva" width="640" height="400" loading="lazy">
+                    </figure>
+                    <div class="card__body">
+                        <h3 class="card__title">Sitio institucional responsivo</h3>
+                        <p class="card__text">
+                            Sitio de varias páginas maquetado con CSS Grid y Flexbox, adaptable desde 320&nbsp;px.
+                        </p>
+                        <p class="card__problem">
+                            <strong>Problema que resuelve:</strong> la organización no tenía presencia web
+                            y su información circulaba solo en PDF.
+                        </p>
+                        <ul class="badges">
+                            <li class="badge">HTML</li>
+                            <li class="badge">CSS</li>
+                        </ul>
+                        <p class="card__actions">
+                            <button class="btn btn--ghost" type="button" data-modal="proyecto-2">Ver detalle</button>
+                            <a class="btn btn--ghost" href="https://github.com/[TU-USUARIO]/[REPO]" target="_blank" rel="noopener">Repositorio</a>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card" data-tech="python javascript">
+                    <figure class="card__media">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Crect width='640' height='400' fill='%231C1B24'/%3E%3Ctext x='320' y='210' font-family='sans-serif' font-size='26' fill='%238D8AA0' text-anchor='middle'%3ECaptura del proyecto 3%3C/text%3E%3C/svg%3E"
+                             alt="Captura del panel de datos del proyecto académico" width="640" height="400" loading="lazy">
+                    </figure>
+                    <div class="card__body">
+                        <h3 class="card__title">Panel de notas académicas</h3>
+                        <p class="card__text">
+                            Aplicación que calcula promedios y muestra el avance por materia en gráficos simples.
+                        </p>
+                        <p class="card__problem">
+                            <strong>Problema que resuelve:</strong> reemplaza hojas de cálculo manuales para
+                            saber qué nota falta para aprobar cada materia.
+                        </p>
+                        <ul class="badges">
+                            <li class="badge">Python</li>
+                            <li class="badge">JavaScript</li>
+                        </ul>
+                        <p class="card__actions">
+                            <button class="btn btn--ghost" type="button" data-modal="proyecto-3">Ver detalle</button>
+                            <a class="btn btn--ghost" href="https://github.com/[TU-USUARIO]/[REPO]" target="_blank" rel="noopener">Repositorio</a>
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="projects__empty" id="projectsEmpty" hidden>No hay proyectos con esa tecnología todavía.</p>
+        </section>
+
+        <!-- ============ DESIGN SYSTEM ============ -->
+        <section class="section" id="design-system">
+            <h2 class="section__title">Design System</h2>
+            <p class="section__intro">
+                Los tokens y componentes de esta página. Todo lo que ves aquí es el mismo CSS que usa el portafolio.
+            </p>
+
+            <article class="ds-block">
+                <h3>Colores</h3>
+                <ul class="swatches">
+                    <li class="swatch">
+                        <span class="swatch__chip" style="background: var(--color-primary)"></span>
+                        <span class="swatch__name">Primary</span>
+                        <code class="swatch__value">--color-primary</code>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch__chip" style="background: var(--color-secondary)"></span>
+                        <span class="swatch__name">Secondary</span>
+                        <code class="swatch__value">--color-secondary</code>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch__chip" style="background: var(--color-background)"></span>
+                        <span class="swatch__name">Background</span>
+                        <code class="swatch__value">--color-background</code>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch__chip" style="background: var(--color-surface)"></span>
+                        <span class="swatch__name">Surface</span>
+                        <code class="swatch__value">--color-surface</code>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch__chip" style="background: var(--color-text)"></span>
+                        <span class="swatch__name">Text</span>
+                        <code class="swatch__value">--color-text</code>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch__chip" style="background: var(--color-text-muted)"></span>
+                        <span class="swatch__name">Text muted</span>
+                        <code class="swatch__value">--color-text-muted</code>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch__chip" style="background: var(--color-border)"></span>
+                        <span class="swatch__name">Border</span>
+                        <code class="swatch__value">--color-border</code>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="ds-block">
+                <h3>Tipografía</h3>
+                <div class="ds-type">
+                    <p class="ds-type__sample" style="font: var(--text-h1)">Encabezado h1 · Fraunces</p>
+                    <p class="ds-type__sample" style="font: var(--text-h2)">Encabezado h2 · Fraunces</p>
+                    <p class="ds-type__sample" style="font: var(--text-h3)">Encabezado h3 · Inter Tight</p>
+                    <p>Párrafo base: texto de lectura a 1rem con interlineado amplio para líneas de menos de 80 caracteres.</p>
+                    <p class="text-muted">Texto secundario: notas, descripciones cortas y metadatos.</p>
+                    <p><a href="#design-system">Así se ve un enlace dentro de un párrafo.</a></p>
+                </div>
+            </article>
+
+            <article class="ds-block">
+                <h3>Espaciado</h3>
+                <ul class="ds-space">
+                    <li><span class="ds-space__bar" style="width: var(--space-xs)"></span><code>--space-xs · 0.25rem</code></li>
+                    <li><span class="ds-space__bar" style="width: var(--space-sm)"></span><code>--space-sm · 0.5rem</code></li>
+                    <li><span class="ds-space__bar" style="width: var(--space-md)"></span><code>--space-md · 1rem</code></li>
+                    <li><span class="ds-space__bar" style="width: var(--space-lg)"></span><code>--space-lg · 2rem</code></li>
+                    <li><span class="ds-space__bar" style="width: var(--space-xl)"></span><code>--space-xl · 4rem</code></li>
+                </ul>
+            </article>
+
+            <article class="ds-block">
+                <h3>Componentes</h3>
+
+                <div class="ds-demo">
+                    <h4>Botones</h4>
+                    <p class="ds-demo__row">
+                        <button class="btn btn--primary" type="button">Botón primario</button>
+                        <button class="btn btn--secondary" type="button">Botón secundario</button>
+                        <button class="btn btn--ghost" type="button">Botón discreto</button>
+                    </p>
+                </div>
+
+                <div class="ds-demo">
+                    <h4>Badges y chips</h4>
+                    <p class="ds-demo__row">
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="chip">Chip de filtro</span>
+                        <span class="chip is-active">Chip activo</span>
+                    </p>
+                </div>
+
+                <div class="ds-demo">
+                    <h4>Card de proyecto</h4>
+                    <article class="card card--demo">
+                        <div class="card__body">
+                            <h5 class="card__title">Título del proyecto</h5>
+                            <p class="card__text">Descripción breve de una o dos líneas.</p>
+                            <ul class="badges">
+                                <li class="badge">Tecnología</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="ds-demo">
+                    <h4>Campos de formulario</h4>
+                    <div class="field">
+                        <label class="field__label" for="dsInput">Input de texto</label>
+                        <input class="field__control" id="dsInput" type="text" placeholder="Escribe aquí">
+                    </div>
+                    <div class="field">
+                        <label class="field__label" for="dsTextarea">Textarea</label>
+                        <textarea class="field__control" id="dsTextarea" rows="3" placeholder="Mensaje de ejemplo"></textarea>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- ============ CONTACTO ============ -->
+        <section class="section" id="contacto">
+            <h2 class="section__title">Contacto</h2>
+
+            <div class="contact">
+                <form class="form" id="contactForm" novalidate>
+                    <h3>Envíame un mensaje</h3>
+
+                    <div class="field">
+                        <label class="field__label" for="nombre">Nombre</label>
+                        <input class="field__control" id="nombre" name="nombre" type="text"
+                               required minlength="3" autocomplete="name"
+                               aria-describedby="errorNombre">
+                        <span class="field__error" id="errorNombre" role="alert"></span>
+                    </div>
+
+                    <div class="field">
+                        <label class="field__label" for="email">Correo electrónico</label>
+                        <input class="field__control" id="email" name="email" type="email"
+                               required autocomplete="email" aria-describedby="errorEmail">
+                        <span class="field__error" id="errorEmail" role="alert"></span>
+                    </div>
+
+                    <div class="field">
+                        <label class="field__label" for="mensaje">Mensaje</label>
+                        <textarea class="field__control" id="mensaje" name="mensaje" rows="5"
+                                  required minlength="10" aria-describedby="errorMensaje"></textarea>
+                        <span class="field__error" id="errorMensaje" role="alert"></span>
+                    </div>
+
+                    <button class="btn btn--primary" type="submit">Enviar mensaje</button>
+                    <p class="form__status" id="formStatus" role="status"></p>
+                </form>
+
+                <aside class="contact__info" aria-label="Datos de contacto">
+                    <h3>Dónde encontrarme</h3>
+                    <ul class="contact__list">
+                        <li><a href="mailto:[TU-CORREO]">[TU-CORREO]</a></li>
+                        <li><a href="https://github.com/[TU-USUARIO]" target="_blank" rel="noopener">github.com/[TU-USUARIO]</a></li>
+                        <li><a href="https://linkedin.com/in/[TU-USUARIO]" target="_blank" rel="noopener">linkedin.com/in/[TU-USUARIO]</a></li>
+                        <li>Quito, Ecuador</li>
+                    </ul>
+                    <p class="text-muted">
+                        Respondo correos entre semana. Para propuestas de trabajo, escribe directamente al correo.
+                    </p>
+                </aside>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year">2026</span> [TU NOMBRE COMPLETO]. Hecho con HTML, CSS y JavaScript.</p>
+        <p><a href="#inicio">Volver arriba</a></p>
+    </footer>
+
+    <button class="to-top" id="toTop" type="button" aria-label="Volver al inicio" hidden>↑</button>
+
+    <!-- Modal de detalle de proyecto -->
+    <div class="modal" id="modal" hidden>
+        <div class="modal__backdrop" data-close-modal></div>
+        <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <h3 class="modal__title" id="modalTitle">Título</h3>
+            <p class="modal__text" id="modalText">Descripción</p>
+            <button class="btn btn--secondary" type="button" data-close-modal>Cerrar</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
