@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* ---------- 4. Modal de detalle ---------- */
+    
     const modal = document.getElementById('modal');
     const modalTitle = document.getElementById('modalTitle');
     const modalText = document.getElementById('modalText');
