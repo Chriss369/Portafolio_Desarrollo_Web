@@ -87,9 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     'Construido con HTML, CSS y JavaScript.'   
         },
         'proyecto-2': {
-            titulo: 'Sitio institucional responsivo',
-            texto: 'Cinco páginas con navegación compartida, maquetadas con CSS Grid. Incluye formulario de ' +
-                   'contacto, galería y versión móvil probada desde 320 px de ancho.'
+            titulo: 'Sistema de gestión de un gimnasio',
+            texto:'Modelo de base de datos con tablas de clientes, membresías, pagos, clases, empleados ' +
+                  'e instructores. Incluye procedimientos con cursores para generar pagos con fechas y montos ' +
+                  'aleatorios, y tablas de auditoría para registrar cambios en los datos.'
         },
         'proyecto-3': {
             titulo: 'Panel de notas académicas',
