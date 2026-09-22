@@ -82,10 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Detalle ampliado de cada proyecto (edita estos textos con tu información real).
     const detalles = {
         'proyecto-1': {
-            titulo: 'Gestor de tareas',
-            texto: 'Aplicación de una sola página. Las tareas se crean, editan y marcan como completadas, ' +
-                   'y se guardan en localStorage para que persistan al recargar. Construida con JavaScript ' +
-                   'modular, sin librerías externas.'
+            titulo: 'Cartas de Memoria',
+            texto: 'Juego de memoria por parejas de cartas, jugable hasta 2 personas. Incluye contador de movimientos y cronómetro. ' +
+                    'Construido con HTML, CSS y JavaScript.'   
         },
         'proyecto-2': {
             titulo: 'Sitio institucional responsivo',
