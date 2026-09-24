@@ -93,9 +93,10 @@ document.addEventListener('DOMContentLoaded', () => {
                   'aleatorios, y tablas de auditoría para registrar cambios en los datos.'
         },
         'proyecto-3': {
-            titulo: 'Panel de notas académicas',
-            texto: 'Calcula promedios ponderados y la nota mínima necesaria para aprobar cada materia. ' +
-                   'El procesamiento de datos se hizo en Python y la interfaz en JavaScript.'
+            titulo: 'Clasificación de Banano con IA',
+            texto: 'Modelo de deep learning entrenado con InceptionV3 que clasifica bananos según su estado ' +
+                   'de madurez y los etiqueta como Premium o Rechazo. La interfaz web permite subir una foto ' +
+                   'y ver la confianza de la predicción para cada categoria, construida con Flask.'
         }
     };
 
