@@ -1,6 +1,4 @@
-/* =========================================================
-   1. TOKENS — CSS Custom Properties
-   ========================================================= */
+
 :root {
     /* Color (tema oscuro por defecto) */
     --color-primary: #c9a227;
@@ -41,14 +39,14 @@
     --shadow-card: 0 10px 30px rgb(0 0 0 / 0.35);
     --shadow-raised: 0 4px 14px rgb(0 0 0 / 0.25);
 
-    /* Medidas */
+    
     --width-container: 68rem;
     --width-text: 60ch;
     --header-height: 4.25rem;
     --transition: 180ms ease;
 }
 
-/* Tema claro (se activa con el botón; se guarda en localStorage) */
+
 [data-theme="light"] {
     --color-primary: #8a6d10;
     --color-primary-soft: rgb(138 109 16 / 0.12);
@@ -63,9 +61,7 @@
     --shadow-raised: 0 3px 10px rgb(27 26 34 / 0.1);
 }
 
-/* =========================================================
-   2. BASE
-   ========================================================= */
+
 *,
 *::before,
 *::after {
@@ -136,9 +132,7 @@ ul { padding: 0; margin: 0; list-style: none; }
 
 .skip-link:focus { left: var(--space-md); }
 
-/* =========================================================
-   3. HEADER Y NAVEGACIÓN
-   ========================================================= */
+
 .site-header {
     position: sticky;
     top: 0;
@@ -230,9 +224,7 @@ ul { padding: 0; margin: 0; list-style: none; }
 .theme-toggle:hover { border-color: var(--color-primary); }
 .theme-toggle__icon { color: var(--color-primary); }
 
-/* =========================================================
-   4. LAYOUT DE SECCIONES
-   ========================================================= */
+
 .section {
     max-width: var(--width-container);
     margin-inline: auto;
@@ -247,9 +239,7 @@ ul { padding: 0; margin: 0; list-style: none; }
     margin-bottom: var(--space-lg);
 }
 
-/* =========================================================
-   5. HERO
-   ========================================================= */
+
 .hero {
     max-width: var(--width-container);
     margin-inline: auto;
@@ -303,9 +293,6 @@ ul { padding: 0; margin: 0; list-style: none; }
     max-width: 18rem;
 }
 
-/* =========================================================
-   6. SOBRE MÍ
-   ========================================================= */
 .about {
     display: grid;
     grid-template-columns: 1.6fr 1fr;
@@ -329,9 +316,7 @@ ul { padding: 0; margin: 0; list-style: none; }
 
 .about__list strong { color: var(--color-text); }
 
-/* =========================================================
-   7. HABILIDADES
-   ========================================================= */
+
 .skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -390,9 +375,6 @@ ul { padding: 0; margin: 0; list-style: none; }
 .skill__level[data-level="Intermedio"] { color: var(--color-primary); }
 .skill__level[data-level="Básico"] { color: var(--color-secondary); border-color: var(--color-secondary); }
 
-/* =========================================================
-   8. PROYECTOS
-   ========================================================= */
 .filters {
     display: flex;
     gap: var(--space-sm);
@@ -484,9 +466,7 @@ ul { padding: 0; margin: 0; list-style: none; }
 
 .projects__empty { color: var(--color-text-muted); margin-top: var(--space-lg); }
 
-/* =========================================================
-   9. BOTONES
-   ========================================================= */
+
 .btn {
     display: inline-block;
     border-radius: var(--radius-full);
@@ -526,9 +506,7 @@ ul { padding: 0; margin: 0; list-style: none; }
 
 .btn--ghost:hover { color: var(--color-text); }
 
-/* =========================================================
-   10. DESIGN SYSTEM
-   ========================================================= */
+
 .ds-block {
     border: var(--border-thin);
     border-radius: var(--radius-md);
@@ -578,9 +556,7 @@ ul { padding: 0; margin: 0; list-style: none; }
     margin: 0;
 }
 
-/* =========================================================
-   11. FORMULARIO Y CONTACTO
-   ========================================================= */
+
 .contact {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
@@ -631,9 +607,7 @@ ul { padding: 0; margin: 0; list-style: none; }
 
 .contact__list { display: grid; gap: var(--space-sm); margin-bottom: var(--space-md); font-size: 0.95rem; }
 
-/* =========================================================
-   12. FOOTER, BOTÓN SUBIR Y MODAL
-   ========================================================= */
+
 .site-footer {
     border-top: var(--border-thin);
     padding: var(--space-lg) var(--space-md);
@@ -692,9 +666,7 @@ ul { padding: 0; margin: 0; list-style: none; }
 
 .modal__text { color: var(--color-text-muted); }
 
-/* =========================================================
-   13. RESPONSIVE
-   ========================================================= */
+
 @media (max-width: 62rem) {
     .hero { grid-template-columns: 1fr; }
     .hero__figure { order: -1; }

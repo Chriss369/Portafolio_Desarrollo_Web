@@ -10,7 +10,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* ---------- 1. Tema claro / oscuro ---------- */
     const root = document.documentElement;
     const themeToggle = document.getElementById('themeToggle');
     const themeLabel = document.getElementById('themeLabel');
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('portafolio-tema', next);
     });
 
-    /* ---------- 2. Menú responsive ---------- */
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');
 
@@ -47,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* ---------- 3. Filtro de proyectos ---------- */
+   
     const chips = document.querySelectorAll('.filters .chip');
     const cards = document.querySelectorAll('#projectGrid .card');
     const emptyMessage = document.getElementById('projectsEmpty');
@@ -79,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalText = document.getElementById('modalText');
     let lastFocused = null;
 
-    // Detalle ampliado de cada proyecto (edita estos textos con tu información real).
+    
     const detalles = {
         'proyecto-1': {
             titulo: 'Cartas de Memoria',
@@ -127,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Escape' && !modal.hidden) closeModal();
     });
 
-    /* ---------- 5. Validación del formulario ---------- */
+  
     const form = document.getElementById('contactForm');
     const status = document.getElementById('formStatus');
 
@@ -167,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.reset();
     });
 
-    /* ---------- 6. Volver arriba y enlace activo ---------- */
+    
     const toTop = document.getElementById('toTop');
 
     toTop.addEventListener('click', () => {
@@ -192,6 +190,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     secciones.forEach((s) => observer.observe(s));
 
-    /* ---------- Año actual en el footer ---------- */
+    
     document.getElementById('year').textContent = new Date().getFullYear();
 });
